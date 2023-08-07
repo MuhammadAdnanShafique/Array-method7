@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question7</title>
+</head>
+<body>
+    <button onclick="test()">Click</button>
+    <h1 id="output1"></h1><h1 id="output2"></h1>
+    <h1 id="output3"></h1><h1 id="output4"></h1>
+    <h1 id="output5"></h1>
+
+    <script>
+        function test() {
+        let StudentNameNumber = [{Name:"Adnan",Number:52},{Name:"Ali",Number:62},{Name:"Ahmad",Number:72},{Name:"Akmal",Number:82},{Name:"Aslam",Number:92},]
+        for (let index = 0; index < StudentNameNumber.length; index++) {
+           if ( StudentNameNumber[index].Number>90 && StudentNameNumber[index].Number<100) {
+            document.getElementById('output1').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : A"+"<br>"
+           }
+            else
+            if ( StudentNameNumber[index].Number>80 && StudentNameNumber[index].Number<90) {
+            document.getElementById('output2').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : B"+"<br>"}
+            else
+            if ( StudentNameNumber[index].Number>70 && StudentNameNumber[index].Number<80) {
+            document.getElementById('output3').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : C"+"<br>"}
+            else
+            if ( StudentNameNumber[index].Number>60 && StudentNameNumber[index].Number<70) {
+            document.getElementById('output4').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : D"+"<br>"}
+            else
+            if ( StudentNameNumber[index].Number<60){
+            document.getElementById('output5').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : Fail"+"<br>"}
+        }
+    }
+    </script>
+</body>
+</html>
+<!-- let StudentNameNumber = [{Name:"Adnan",Number:52},{Name:"Ali",Number:62},{Name:"Ahmad",Number:72},{Name:"Akmal",Number:82},{Name:"Aslam",Number:92},]
+        for (let index = 0; index < StudentNameNumber.length; index++) {
+           if ( StudentNameNumber[index].Number>90 && StudentNameNumber[index].Number<100) {
+            document.getElementById('output').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : A"+"<br>"
+           }
+            else
+            if ( StudentNameNumber[index].Number>80 && StudentNameNumber[index].Number<90) {
+            document.getElementById('output').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : B"+"<br>"}
+            else
+            if ( StudentNameNumber[index].Number>70 && StudentNameNumber[index].Number<80) {
+            document.getElementById('output').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : C"+"<br>"}
+            else
+            if ( StudentNameNumber[index].Number>60 && StudentNameNumber[index].Number<70) {
+            document.getElementById('output').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : D"+"<br>"}
+            else
+            if ( StudentNameNumber[index].Number<60){
+            document.getElementById('output').innerHTML= "Name - "+(StudentNameNumber[index].Name)+"  and Number - "+StudentNameNumber[index].Number + " | Grade : Fail"+"<br>"}
+        } -->
